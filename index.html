@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body style="background-color: blueviolet;">
+        <form id="lomake" onsubmit="redirectToYouTube()">
+            <label for="enimi">Etunimi: </label>
+            <input type="text" id="enimi" name="enimi" value=""><br>
+            <label for="snimi">Sukunimi: </label>
+            <input type="text" id="snimi" name="snimi" value=""><br><br>
+
+            <label for="sukupuoli">Sukupuoli</label><br><br>
+            <input type="radio" name="sukupuoli" value="mies">Mies<br>
+            <input type="radio" name="sukupuoli" value="nainen">Nainen<br>
+            <input type="radio" name="sukupuoli" value="nainen">Nainen<br><br>
+
+            <label for="ikäluokka">Ikäluokka</label><br><br>
+            <select id="ikäluokka" name="ikäluokka">
+                <option value="0-12">0-12 vuotta</option>
+                <option value="12-18">12-18 vuotta</option>
+                <option value="18-32">18-32 vuotta</option>
+                <option value="32-50">32-50 vuotta</option>
+                <option value="50+">50+ vuotta</option>
+            </select><br><br>
+
+            <input type="submit" value="Lähetä">
+        </form>
+        <script>
+            function redirectToYouTube() {
+                event.preventDefault();
+                var youtubeUrl = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley";
+                window.location.href = youtubeUrl;
+            }
+        </script>
+    </body>
+</html>
